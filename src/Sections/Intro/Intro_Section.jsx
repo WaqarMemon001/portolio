@@ -5,7 +5,7 @@ import Image from '../../assets/vector.jpg'
 
 const Intro_Section = () => {
     return (
-        <div className='intro_main' id='Home'>
+        <div className='intro_main' id='home'>
 
             {/* <div className="wrapper">
                 <div className="left">

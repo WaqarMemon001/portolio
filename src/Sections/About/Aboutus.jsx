@@ -5,7 +5,7 @@ import './Aboutus.scss'
 
 const Aboutus = () => {
   return (
-    <div className='about_main' id='About'>Aboutus</div>
+    <div className='about_main' id='about'>Aboutus</div>
   )
 }
 

@@ -8,16 +8,16 @@ const menu = ({menuOpen , setMenuOpen}) => {
         <div className={"menu-main "+(menuOpen && "active")}>
             <ul>
                 <li>
-                    <a href="/#Home">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="/#About">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="/#Services">Our Services</a>
+                    <a href="#services">Our Services</a>
                 </li>
                 <li>
-                    <a href="/#Projects">Projects</a>
+                    <a href="#projects">Projects</a>
                 </li>
             </ul>
         </div>
