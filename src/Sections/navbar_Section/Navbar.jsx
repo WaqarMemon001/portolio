@@ -24,10 +24,10 @@ const Navbar = ({ menuOpen, setMenuOpen, isDesktop, setIsDesktop }) => {
                 </div> :
                     <div className='items'>
                         <div className="items-subdiv">
-                            <a href="#Home">HOME</a>
-                            <a href="#About">ABOUT</a>
-                            <a href="#Services">SERVICES</a>
-                            <a href="#Projects">PROJECTS</a>
+                            <a href="/#Home">HOME</a>
+                            <a href="/#About">ABOUT</a>
+                            <a href="/#Services">SERVICES</a>
+                            <a href="/#Projects">PROJECTS</a>
                         </div>
 
                     </div>}
