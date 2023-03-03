@@ -1,0 +1,61 @@
+@import '../../Styles/globalstyle.scss';
+
+
+.intro_main {
+    height: 100vh;
+    background-color: $background-Color;
+    // background-image: url(../../assets/Laptopimage/Loptopimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .wrapper {
+
+
+        display: flex;
+        padding-left: 30px;
+        padding-top: 70px;
+        
+
+        .left {
+
+            >h1 {
+                font-size: 35px;
+                color: $mainText;
+
+              
+            }
+
+            >h2 {
+                font-size: 28px;
+                color: $mainText;
+
+              
+            }
+
+            .hire_Button {
+                text-decoration: none;
+                width: 250px;
+                height: 55px;
+                color: $mainText;
+                font-size: 18px;
+                font-weight: 500;
+                border: none;
+                border-radius: 25px;
+                cursor: pointer;
+            }
+
+        }
+
+        .right {
+            align-items: flex-end;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background-size: cover;
+            overflow: hidden;
+
+        }
+    }
+
+
+}

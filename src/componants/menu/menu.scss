@@ -1,0 +1,45 @@
+@import '../../Styles/globalstyle.scss';
+
+
+.menu-main {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background-color: $navbarBackgroundColor;
+    z-index: 2;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 2s ease;
+
+    &.active {
+        right: 0;
+    }
+
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+        color: $navbarTextColor;
+
+        li {
+
+            justify-content: space-between;
+            margin-bottom: 15px;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+                font-size: inherit;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+}
