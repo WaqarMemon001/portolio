@@ -8,16 +8,16 @@ const menu = ({menuOpen , setMenuOpen}) => {
         <div className={"menu-main "+(menuOpen && "active")}>
             <ul>
                 <li>
-                    <a href="#home">Home</a>
+                    <a href="#home" onClick={() => setMenuOpen(!menuOpen)}>Home</a>
                 </li>
                 <li>
-                    <a href="#about">About</a>
+                    <a href="#about" onClick={() => setMenuOpen(!menuOpen)}>About</a>
                 </li>
                 <li>
-                    <a href="#services">Our Services</a>
+                    <a href="#services" onClick={() => setMenuOpen(!menuOpen)}>Our Services</a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="#projects" onClick={() => setMenuOpen(!menuOpen)}>Projects</a>
                 </li>
             </ul>
         </div>
