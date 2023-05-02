@@ -1,10 +1,14 @@
-$mainText: rgb(3, 3, 3);
-$navbarBackgroundColor : rgba(0, 38, 255, 0.872);
-$navbarTextColor: white ;
-$background-Color: #f200ff;
+
+
+
+$mainText:  rgb(243, 178, 0);
+$navbarBackgroundColor : $mainText;
+// $navbarBackgroundColor : #126f3d;
+$navbarTextColor: rgb(3, 0, 0) ;
+// $background-Color: #f200ff;
 
 
 
 
 
-$background-Color: #e6e611;
+$background-Color: white;

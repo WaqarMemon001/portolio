@@ -26,27 +26,40 @@
                 text-decoration: none;
                 font-size: 28px;
                 font-weight: 600;
-                color: $mainText;
+                color: $navbarTextColor;
+            }
+
+            a:hover {
+                color: $navbarBackgroundColor;
+            }
+            span{
+                color : $mainText,
             }
 
         }
 
 
         .items {
-
             justify-content: space-between;
-            padding-right: 50px;
-            align-items: center;
+            margin-right: 30px;
+            padding: 0;
 
-            a {
-                text-decoration: none;
-                color: $mainText;
-                font-size: 20px;
-                font-weight: 600;
-                margin-left: 20px;
+            ul {
+                display: flex;
+                list-style-type: none;
 
-                .icons {
-                    color: $mainText;
+                li {
+                     padding-right: 30px;
+                    a {
+                        text-decoration: none;
+                        color: $navbarTextColor;
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+
+                    a:hover {
+                        color: $navbarBackgroundColor;
+                    }
                 }
             }
 
@@ -66,7 +79,7 @@
                 span {
                     width: 100%;
                     height: 3px;
-                    background-color: $mainText;
+                    background-color: $navbarTextColor;
                     transform-origin: left;
                     transition: all 2s ease;
                 }
@@ -84,6 +97,12 @@
         .logo {
             a {
                 color: $navbarTextColor;
+             span{
+                transition: all 2s ease;
+                color: $navbarTextColor;
+
+             }
+                
             }
         }
 
@@ -92,7 +111,7 @@
             .toggle {
                 span {
                     &:first-child {
-                        background-color: white;
+                        background-color: $mainText;
                         transform: rotate(45deg);
                     }
 
@@ -101,7 +120,7 @@
                     }
 
                     &:last-child {
-                        background-color: white;
+                        background-color: $mainText ;
                         transform: rotate(-45deg);
 
                     }
@@ -122,13 +141,13 @@
 //     }
 
 // }
-@media only screen and (max-width: 688px){
+@media only screen and (max-width: 688px) {
 
-    
-    .navbar-main{
-        .wrapper{
-            .logo{
-                a{
+
+    .navbar-main {
+        .wrapper {
+            .logo {
+                a {
                     font-size: 25px;
                 }
             }

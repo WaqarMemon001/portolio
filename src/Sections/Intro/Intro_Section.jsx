@@ -1,27 +1,52 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './Intro_section.scss'
+import { init } from 'ityped'
 
-import Image from '../../assets/vector.jpg'
+
+
+import image from '../../assets/waqar-removebg-preview.png'
+
+
 
 const Intro_Section = () => {
+    const textRef = useRef()
+    
+    useEffect(() => {
+
+        init(textRef.current, {
+            showCursor: true,
+            backDelay: 1500,
+            backSpeed : 60,
+            strings: ['designer!','Developer!']
+        });
+
+
+    }, [])
     return (
         <div className='intro_main' id='home'>
 
-            {/* <div className="wrapper">
-                <div className="left">
-                    <h2>Hi there,</h2>
-                    <h1>I am <span> Waqar</span>  Shaffi</h1>
-                    <h2>A full Stack <span>Web Developer</span>
-                    </h2>
-                    <button className='hire_Button'>Hire Me</button>
-                </div>
-               <div className="right">
-                <div className='img_container'>
-                    <img src={Image} alt="" />
-                </div>
-               </div>
 
-            </div> */}
+            <div className="left">
+                <div className="imgContainer">
+                    <img src={image} alt="image..." />
+                </div>
+
+            </div>
+            <div className="right">
+                <div className="rightmain">
+                    <h2>Hi There, I'm</h2>
+                    <h1>Waqar Shaffi</h1>
+                    <h3>Freelance  <span ref={textRef}></span>  </h3>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
 
 
         </div>

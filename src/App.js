@@ -28,6 +28,9 @@ const App = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
+
+
+
   return (
     <div className="App" >
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} isDesktop={isDesktop} setIsDesktop={setIsDesktop} />
